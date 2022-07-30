@@ -3,7 +3,10 @@
 # dependencies
 /node_modules
 /.pnp
-.pnp.js
+.pnp.j
+.package-lock-json
+.idea
+.netlify
 
 # testing
 /coverage
