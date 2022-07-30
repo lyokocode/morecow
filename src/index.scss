@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(166, 38, 170, 0.5);
+    background-image: url("https://cdn.wallpapersafari.com/12/46/rxVSaw.jpg");
+    background-size: contain;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    flex-direction: column;
+    background-color: rgba(213, 210, 210, 0.7);
+    margin: 0 auto;
+    transform: translateY(50%);
+
+
+    .logo {
+        img {
+            width: 100px;
+            object-fit: cover;
+        }
+    }
+
+
+    .login-form {
+        padding: 20px;
+        border-radius: 10px;
+        width: 500px;
+        display: grid;
+        gap: 12px;
+
+        label {
+            display: block;
+            position: relative;
+
+            input {
+                border-radius: 10px;
+                height: 40px;
+                width: 100%;
+                background-color: #b3dcff;
+                padding-left: 15px;
+
+                &:focus {
+                    border: 1px solid blue;
+                    outline: none;
+                }
+            }
+        }
+
+        button {
+            height: 30px;
+            background-color: #d52685;
+            border-radius: 5px;
+
+            &:disabled {
+                background-color: rgba(213, 38, 133, .8);
+            }
+        }
+
+        .or {
+            display: flex;
+            align-items: center;
+
+            div {
+                height: 1px;
+                flex: 1;
+                background-color: gray;
+            }
+
+            span {
+                padding: 0 16px;
+            }
+        }
+    }
+}
